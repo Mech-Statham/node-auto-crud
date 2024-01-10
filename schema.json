@@ -1,0 +1,38 @@
+{
+    "tables": [
+    {
+        "name": "admins",
+        "columns": [
+          { "name": "id", "type": "integer", "primaryKey": true, "validate": false },
+          { "name": "user_id", "type": "integer", "validate": true, "required": true },
+          { "name": "name", "type": "string", "searchable": true, "validate": true, "required": true },
+          { "name": "address", "type": "string", "searchable": true, "validate": true },
+          { "name": "city", "type": "string", "searchable": true, "validate": true  },
+          { "name": "state", "type": "string", "validate": true },
+          { "name": "dob", "type": "string", "validate": true },
+          { "name": "admin_type", "type": "string", "validate": true, "required": true },
+          { "name": "is_active", "type": "integer", "validate": true },
+          { "name": "created_at", "type": "integer", "validate": false },
+          { "name": "updated_at", "type": "integer", "validate": false }
+        ]
+    },
+    {
+        "name": "accounts",
+        "columns": [
+          { "name": "id", "type": "integer", "primaryKey": true, "validate": false },
+          { "name": "name", "type": "string", "searchable": true, "validate": true, "required": true  },
+          { "name": "address", "type": "string", "searchable": true, "validate": true  },
+          { "name": "city", "type": "string", "searchable": true, "validate": true },
+          { "name": "state", "type": "string", "validate": true },
+          { "name": "website", "type": "string", "validate": true },
+          { "name": "office_email", "type": "string", "searchable": true, "validate": true  },
+          { "name": "office_phone", "type": "string", "searchable": true, "validate": true  },
+          { "name": "office_fax", "type": "string", "validate": true },
+          { "name": "other_description", "type": "string", "validate": true },
+          { "name": "is_active", "type": "integer", "validate": true },
+          { "name": "created_at", "type": "integer", "validate": false },
+          { "name": "updated_at", "type": "integer", "validate": false }
+        ]
+    }
+    ]
+}
